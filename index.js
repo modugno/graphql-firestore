@@ -8,7 +8,9 @@ const schemaPath = './schema/index.graphql'
 const server = new ApolloServer({
   typeDefs: importSchema(schemaPath),
   resolvers,
-  context
+  context,
+  introspection: true,
+  playground: true
 })
 
 server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => console.log(`Running on ${url}`))
