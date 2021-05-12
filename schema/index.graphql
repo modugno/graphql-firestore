@@ -1,0 +1,34 @@
+enum Rating {
+  BR0
+  BR14
+  BR16
+  BR18
+}
+
+type RatingProps {
+  code: Rating
+  text: String
+}
+
+type Product {
+  id: ID
+  title: String
+  price: String
+  rating: RatingProps
+}
+
+input ProductInput {
+  title: String
+  price: Float
+  rating: Rating
+}
+
+type Mutation {
+  addProduct(data: ProductInput): ID
+  updateProduct(id: ID!, data: ProductInput): Product
+}
+
+type Query {
+  products: [Product]
+  product(id: ID!): Product
+}
