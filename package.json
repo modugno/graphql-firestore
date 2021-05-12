@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --ext js,graphql"
+    "start": "node index.js",
+    "dev": "nodemon --ext js,graphql"
   },
   "keywords": [],
   "author": "",
