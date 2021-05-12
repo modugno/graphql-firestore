@@ -12,11 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.4.8",
-    "dayjs": "^1.10.4",
     "dotenv": "^9.0.2",
     "firebase": "^8.3.3",
     "graphql": "^14.2.1",
-    "graphql-import": "^1.0.2"
+    "graphql-tools": "^7.0.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
